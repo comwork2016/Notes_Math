@@ -113,7 +113,7 @@
 
 .. math::
 
-	M = U\sum V^T
+	M = UΣV^T
 
 则有：
 
@@ -123,9 +123,9 @@
 
 	MM^T=U(ΣΣ^T)U^T 
 
-这里 :math:`U` 是列向量 :math:`u_1` 和 :math:`u_2` 组成的矩阵， :math:`\sum` 是非零项为 :math:`\sigma_1` 和 :math:`\sigma_2` 的对角矩阵， :math:`V` 是列向量 :math:`v_1` 和 :math:`v_2` 组成的矩阵。
+这里 :math:`U` 是列向量 :math:`u_1` 和 :math:`u_2` 组成的矩阵， :math:`Σ` 是非零项为 :math:`\sigma_1` 和 :math:`\sigma_2` 的对角矩阵， :math:`V` 是列向量 :math:`v_1` 和 :math:`v_2` 组成的矩阵。
 
-上面描述了怎样将矩阵 :math:`M` 分解成三个矩阵的乘积： :math:`V` 描述了原始空间中的正交基， :math:`U` 描述了相关空间的正交基， :math:`\sum` 描述了 :math:`V` 中的向量变成 :math:`U` 中的向量时被拉伸的倍数。
+上面描述了怎样将矩阵 :math:`M` 分解成三个矩阵的乘积： :math:`V` 描述了原始空间中的正交基， :math:`U` 描述了相关空间的正交基， :math:`Σ` 描述了 :math:`V` 中的向量变成 :math:`U` 中的向量时被拉伸的倍数。
 
 
 例：数据压缩
