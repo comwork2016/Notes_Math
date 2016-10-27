@@ -207,12 +207,18 @@ x+2y \end{bmatrix}
 \[ \begin{align}\begin{aligned}Mx = u_1\sigma_1 v_1^T x + u_2\sigma_2 v_2^T x\\M = u_1\sigma_1 v_1^T + u_2\sigma_2 v_2^T\end{aligned}\end{align} \]</div>
 <p>通常表述成</p>
 <div class="math">
-\[M = U\sum V^T\]</div>
+\[M = UΣV^T\]</div>
 <p>则有：</p>
 <div class="math">
 \[ \begin{align}\begin{aligned}M^T M = V(Σ^T Σ)V^T\\MM^T=U(ΣΣ^T)U^T\end{aligned}\end{align} \]</div>
-<p>这里 <span class="math">\(U\)</span> 是列向量 <span class="math">\(u_1\)</span> 和 <span class="math">\(u_2\)</span> 组成的矩阵， <span class="math">\(\sum\)</span> 是非零项为 <span class="math">\(\sigma_1\)</span> 和 <span class="math">\(\sigma_2\)</span> 的对角矩阵， <span class="math">\(V\)</span> 是列向量 <span class="math">\(v_1\)</span> 和 <span class="math">\(v_2\)</span> 组成的矩阵。</p>
-<p>上面描述了怎样将矩阵 <span class="math">\(M\)</span> 分解成三个矩阵的乘积： <span class="math">\(V\)</span> 描述了原始空间中的正交基， <span class="math">\(U\)</span> 描述了相关空间的正交基， <span class="math">\(\sum\)</span> 描述了 <span class="math">\(V\)</span> 中的向量变成 <span class="math">\(U\)</span> 中的向量时被拉伸的倍数。</p>
+<p>这里 <span class="math">\(U\)</span> 是列向量 <span class="math">\(u_1\)</span> 和 <span class="math">\(u_2\)</span> 组成的矩阵， <span class="math">\(Σ\)</span> 是非零项为 <span class="math">\(\sigma_1\)</span> 和 <span class="math">\(\sigma_2\)</span> 的对角矩阵， <span class="math">\(V\)</span> 是列向量 <span class="math">\(v_1\)</span> 和 <span class="math">\(v_2\)</span> 组成的矩阵。</p>
+<p>关系式的右边描述了关系式左边的特征值分解。于是：</p>
+<ul class="simple">
+<li><span class="math">\(V\)</span> 的列向量（右奇异向量）是 <span class="math">\(M^T M\)</span> 的特征向量。</li>
+<li><span class="math">\(U\)</span> 的列向量（左奇异向量）是 <span class="math">\(MM^T\)</span> 的特征向量。</li>
+<li><span class="math">\(Σ\)</span> 的非零对角元（非零奇异值）是 <span class="math">\(MM^T\)</span> 或者 <span class="math">\(M^T M\)</span> 的非零特征值的平方根。</li>
+</ul>
+<p>上面描述了怎样将矩阵 <span class="math">\(M\)</span> 分解成三个矩阵的乘积： <span class="math">\(V\)</span> 描述了原始空间中的正交基， <span class="math">\(U\)</span> 描述了相关空间的正交基， <span class="math">\(Σ\)</span> 描述了 <span class="math">\(V\)</span> 中的向量变成 <span class="math">\(U\)</span> 中的向量时被拉伸的倍数。</p>
 </div>
 <div class="section" id="id4">
 <h2>例：数据压缩<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
